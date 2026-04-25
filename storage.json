@@ -1,0 +1,99 @@
+{
+    "kennn": {
+        "username": "kennn",
+        "password": "2003",
+        "balance": 1200.0,
+        "full_name": "Ken Camacho",
+        "transactions": [
+            {
+                "date": "2026-04-24 22:42:09",
+                "type": "TRANSFER_OUT",
+                "amount": 500.0,
+                "balance": 1200.0,
+                "other_party": "via"
+            },
+            {
+                "date": "2026-04-24 22:40:55",
+                "type": "DEPOSIT",
+                "amount": 1000.0,
+                "balance": 1700.0,
+                "other_party": ""
+            },
+            {
+                "date": "2026-04-24 22:36:34",
+                "type": "DEPOSIT",
+                "amount": 500.0,
+                "balance": 700.0,
+                "other_party": ""
+            },
+            {
+                "date": "2026-04-24 22:15:22",
+                "type": "WITHDRAWAL",
+                "amount": 500.0,
+                "balance": 200.0,
+                "other_party": ""
+            },
+            {
+                "date": "2026-04-24 22:15:15",
+                "type": "DEPOSIT",
+                "amount": 200.0,
+                "balance": 700.0,
+                "other_party": ""
+            },
+            {
+                "date": "2026-04-24 22:12:13",
+                "type": "INITIAL_DEPOSIT",
+                "amount": 500.0,
+                "balance": 500.0,
+                "other_party": "Welcome Bonus"
+            }
+        ],
+        "created_date": "2026-04-24 22:12:13"
+    },
+    "via": {
+        "username": "via",
+        "password": "2005",
+        "balance": 1000.0,
+        "full_name": "Bea Camacho",
+        "transactions": [
+            {
+                "date": "2026-04-24 22:42:09",
+                "type": "TRANSFER_IN",
+                "amount": 500.0,
+                "balance": 1000.0,
+                "other_party": "kennn"
+            },
+            {
+                "date": "2026-04-24 22:41:34",
+                "type": "INITIAL_DEPOSIT",
+                "amount": 500.0,
+                "balance": 500.0,
+                "other_party": "Welcome Bonus"
+            }
+        ],
+        "created_date": "2026-04-24 22:41:34"
+    },
+    "khen": {
+        "username": "khen",
+        "password": "12345",
+        "balance": 700.0,
+        "full_name": "khen lagrama",
+        "transactions": [
+            {
+                "date": "2026-04-25 08:08:11",
+                "type": "DEPOSIT",
+                "amount": 200.0,
+                "balance": 700.0,
+                "other_party": ""
+            },
+            {
+                "date": "2026-04-25 08:07:36",
+                "type": "INITIAL_DEPOSIT",
+                "amount": 500.0,
+                "balance": 500.0,
+                "other_party": "Welcome Bonus"
+            }
+        ],
+        "created_date": "2026-04-25 08:07:36"
+    }
+}

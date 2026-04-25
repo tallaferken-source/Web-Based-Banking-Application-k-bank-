@@ -1,0 +1,58 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - K BANK</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ url_for('dashboard') }}" class="logo">
+                <span>K BANK</span>
+            </a>
+            <div class="nav-links">
+                <a href="{{ url_for('dashboard') }}">Dashboard</a>
+                <a href="{{ url_for('deposit') }}">Deposit</a>
+                <a href="{{ url_for('withdraw') }}">Withdraw</a>
+                <a href="{{ url_for('transfer') }}">Transfer</a>
+                <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="card balance-card">
+            <div class="card-title">Welcome, {{ account.full_name or account.username }}</div>
+            <div class="balance-amount">₱{{ "%.2f"|format(account.balance) }}</div>
+            <div class="balance-label">Available Balance</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">₱{{ "%.2f"|format(deposits) }}</div>
+                <div class="stat-label">Total Deposits</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">₱{{ "%.2f"|format(withdrawals) }}</div>
+                <div class="stat-label">Total Withdrawals</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">₱{{ "%.2f"|format(transfers_out) }}</div>
+                <div class="stat-label">Transfers Sent</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Quick Actions</div>
+            <div class="action-buttons">
+                <a href="{{ url_for('deposit') }}" class="btn btn-primary">Deposit</a>
+                <a href="{{ url_for('withdraw') }}" class="btn btn-primary">Withdraw</a>
+                <a href="{{ url_for('transfer') }}" class="btn btn-primary">Transfer</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
